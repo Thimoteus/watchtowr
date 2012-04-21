@@ -1,0 +1,12 @@
+body {
+  font-size: 10em;
+}
+article {
+  width: 50px;
+}
+div {
+  font-size: 200em;
+}
+div span {
+  font-size: 10em;
+}
