@@ -1,0 +1,10 @@
+{
+	"name" : "watchtowr"
+	"description" : "Watch LESS files for changes, then compile."
+	"url" : "https://github.com/Thimoteus/watchtowr"
+	"keywords" : ["less", "watch"]
+	"author" : "Thimoteus"
+	"version" : "0.15"
+	"main" : "./lib/watchtowr.coffee"
+	"bin" : {"watchtowr" : "./bin/watchtowr"}
+}

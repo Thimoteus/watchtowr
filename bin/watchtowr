@@ -1,0 +1,12 @@
+#!/usr/bin/env coffee
+
+path = require 'path'
+watchtowr = require '../lib/watchtowr.coffee'
+
+# Process input
+args = process.argv[2..]
+input = args[0]
+output = args[1]
+
+# Run the thing
+watchtowr.watch input, output

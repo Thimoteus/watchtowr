@@ -10,3 +10,10 @@ div {
 div span {
   font-size: 10em;
 }
+a {
+  color: green;
+}
+.centered {
+  width: auto;
+  margin: 0 auto;
+}
