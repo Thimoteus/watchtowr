@@ -1,3 +1,4 @@
+# the watchtowr object is our module
 watchtowr = exports
 
 # Dependencies
