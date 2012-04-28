@@ -5,8 +5,12 @@ watchtowr = require '../lib/watchtowr.coffee'
 
 # Process input
 args = process.argv[2..]
-input = args[0]
-output = args[1]
+input = 
+	if /\.less$/.test args[0]
+		args[0]
+	else
+		args[0] + '.less'
+output = args[1] ? input.replace /\.less$/, ".css"
 
 # Run the thing
 watchtowr.watch input, output

@@ -62,7 +62,7 @@ watchtowr.watch = (origin, output) ->
 		fs.watch file, (evt, filename) ->
 			print "Detected #{evt} at #{filename}"
 			if evt is "change"
-				exec "lessc #{origin.replace space, '\\ '} #{output}", (err, stdout, stderr) ->
+				exec "lessc #{origin.replace space, '\\ '} #{output.replace space, '\\ '}", (err, stdout, stderr) ->
 					print stdout
 					print stderr if stderr.length > 0
 					if error?
