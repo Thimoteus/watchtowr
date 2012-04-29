@@ -51,7 +51,7 @@ getAllPaths = (filename) ->
 watchtowr.watch = (origin, output) ->
 	filesToWatch.push origin 
 	print "Watchtowr is watching #{origin}"
-	print "Output to #{output}"
+	print "Compiled output will be #{output}"
 	try
 		getAllPaths origin
 	catch err
